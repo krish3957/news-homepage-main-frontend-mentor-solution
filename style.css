@@ -1,0 +1,265 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #fffdfa;
+    margin: 2% 12%;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+}
+
+.container{
+    max-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    width: 100%;
+    max-width: 1100px;
+}
+.navbar{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+.menu{
+    display: none;
+    width:25px;
+    cursor: pointer;
+}
+nav{
+    flex:1;
+    text-align: right;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin-right:30px; 
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+}
+nav ul li a:hover{
+    color:#e9ab53;
+}
+.close{
+    display: none;
+}
+.middle-part{
+    height: 50%;
+    display:flex;
+    flex-basis: 70%;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.desktop-home{
+    width: 100%;
+    height: 100%;
+}
+.mobile-home{
+    display: none;
+}
+.middle-left{
+    position: relative;
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: column;
+}
+.home-text{
+    position: relative;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+.home-text h1{
+    font-size: 2.6rem;
+    font-weight: 800;
+    margin:0;
+}
+.home-left{
+    display: flex;
+    flex-basis: 50%;
+}
+.home-right{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 55%;
+}
+.home-right p{
+    font-weight: 400;
+    color: 	#5d5f79;
+}
+.home-right button{
+    background-color: #f15e50;
+    color: #fff;
+    border: none;
+    width: 60%;
+    padding: 10px 5px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.home-right button:hover{
+    background-color: #000;
+}
+.middle-right{
+    margin-left: 2%;
+    background-color: #00001a;
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    padding:2%;
+    color: #fff;
+}
+.middle-right h1{
+    color: #e9ab53;
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0; 
+}
+.middle-right a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+   font-weight: 700;
+}
+.middle-right a:hover{
+    color: #e9ab53;
+}
+.middle-right p{
+    font-weight: 400;
+    opacity: 60%;
+}
+.lower-part{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+.lower-part img{
+    width: 100%;
+    height: 80%;
+}
+.lower{
+    
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-basis:33.33%;
+}
+.lower-image{
+    margin-right: 2%;
+}
+.lower-text h1{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+.lower-text a{
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+}
+.lower-part a:hover{
+    color: #e9ab53;
+}
+.middle-right p{
+    color: #fff;
+    opacity: 0.7;
+    font-weight: 400;
+}
+.lower h1{
+    margin-bottom: 0;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+    color: #5d5f79;
+    opacity: 0.7;
+}
+.close{
+    display: none;
+}
+.lower p{
+    color: #5d5f79;
+}
+@media only screen and (max-width:375px) {
+    body{
+        margin: 0;
+    }
+        .container{
+            width: 100%;
+            margin: auto;
+        }
+        nav ul{
+            top: 0;
+            z-index: 2;
+            background-color: #fff;
+            width: 70%;
+            height: 100vh;
+            display: block;
+            position: absolute;
+        }
+        nav ul li{
+            display: none;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding: 20px 0;
+            text-align: left;
+        }
+        .menu{
+            display: block;
+        }
+        .desktop-home{
+            display: none;
+        }
+        .mobile-home{
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        .middle-part{
+            flex-direction: column;
+            margin-top: 0;
+        }
+        .middle-left{
+            flex-basis: 100%;
+            margin-top: 20px;
+        }
+        .home-text{
+
+            flex-direction: column;
+        }
+        .middle-right{
+            margin-left:0;
+            padding: 6% 4%;
+            flex-direction: column;
+            flex-basis: 100%;
+            margin-top: 20px;
+        }
+        .lower-part{
+            flex-direction: column;
+        }
+        .lower{
+            flex-direction: row;
+            flex-basis: 100%;
+        }
+        .lower-image{
+            flex-basis: 40%;
+        }
+        .lower-text{
+            flex-basis: 60%;
+        }
+        .close{
+            display: none;
+            top: 0;
+            right: 0;
+            margin: 20px;
+            cursor: pointer;
+            z-index: 2;
+        }
+        br{
+            display: none;
+        }
+}
